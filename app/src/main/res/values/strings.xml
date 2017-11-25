@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">iBetaTesting</string>
+    <string name="locationEntries" />
+    <string name="locationdetails">Please input device’s location details</string>
+    <string-array name="locationEntriesArray">
+        <item>     </item>
+        <item>Mountain</item>
+        <item>City</item>
+        <item>Plain</item>
+        <item>Underground</item>
+        <item>Coastal</item>
+        <item>Water Body</item>
+    </string-array>
+</resources>

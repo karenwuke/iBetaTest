@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/addRecord_btn"
+        android:layout_width="242dp"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/adddata" />
+
+    <Button
+        android:id="@+id/dataManager_btn"
+        android:layout_width="309dp"
+        android:layout_height="104dp"
+        android:layout_below="@+id/addRecord_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/datamanage" />
+
+
+</RelativeLayout>
