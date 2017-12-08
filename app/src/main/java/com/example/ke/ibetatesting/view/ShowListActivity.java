@@ -38,6 +38,7 @@ import com.example.ke.ibetatesting.R;
         // execute the sql
         //Cursor cursor = DatabaseHelper.getInstance().execQuery(sql);
         Cursor cursor = databaseHelper.execQuery(sql);
+        int count = cursor.getCount();
         // bind the data to list
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(
                 getApplicationContext(), R.layout.listitem, cursor,
