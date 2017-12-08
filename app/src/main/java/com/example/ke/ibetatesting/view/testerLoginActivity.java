@@ -20,8 +20,10 @@ public class testerLoginActivity extends AppCompatActivity {
     EditText Name;
     EditText Password;
     DatabaseHelper databaseHelper;
+    //String TesterName = "";
    // DBOperator dbOperator = new DBOperator();
 
+//    String TesterName = Name.getText().toString();
 
 
     public void onCreate(Bundle savedInstanceState){
@@ -31,6 +33,8 @@ public class testerLoginActivity extends AppCompatActivity {
         tLogin = (Button)findViewById(R.id.testerlogin_btn);
         Name =(EditText)findViewById(R.id.testerName);
         Password = (EditText)findViewById(R.id.testerpwd);
+        //TesterName = Name.getText().toString();
+//        String TesterName = Name.getText().toString();
 
         databaseHelper=new DatabaseHelper(testerLoginActivity.this);
 
@@ -43,7 +47,7 @@ public class testerLoginActivity extends AppCompatActivity {
 
                     startActivity(intent);
                 }else {
-                    Name.setText(null);
+                    //TesterName.setText(null);
                     Toast.makeText(testerLoginActivity.this,"Login failed. Invalid username or password",Toast.LENGTH_SHORT).show();
                 }
             }

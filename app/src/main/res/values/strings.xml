@@ -3,7 +3,7 @@
     <string name="locationEntries" />
     <string name="locationdetails">Please input device’s location details</string>
     <string-array name="locationEntriesArray">
-        <item>     </item>
+        <item>Please choose a location type</item>
         <item>Mountain</item>
         <item>City</item>
         <item>Plain</item>
@@ -11,4 +11,10 @@
         <item>Coastal</item>
         <item>Water Body</item>
     </string-array>
+    <string-array name="activatedTypeArray">
+        <item>Select activated type</item>
+        <item>By Pressed Device Button</item>
+        <item>By Falling down</item>
+    </string-array>
+    <string name="title_activity_add_dev_info">addDevInfo</string>
 </resources>

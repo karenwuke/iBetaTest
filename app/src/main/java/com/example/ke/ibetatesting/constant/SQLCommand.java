@@ -15,9 +15,14 @@ public class SQLCommand {
     //checkout summary
     public static String CHECKOUT_SUMMARY = "select strftime('%m',coduedate) as month,count(*) as total from checkout where strftime('%Y',coduedate)='2011' group by month order by total desc";
 
-    public static String CHECKOUT_LIST = "select checkout.stid as _id, lbtitle, coduedate,coreturned,cofine,stname from checkout,student,libbook where student.stid=checkout.stid and libbook.lbcallnum=checkout.lbcallnum";
+    //public static String CHECKOUT_LIST = "select checkout.stid as _id, lbtitle, coduedate,coreturned,cofine,stname from checkout,student,libbook where student.stid=checkout.stid and libbook.lbcallnum=checkout.lbcallnum";
 
+    public static String RECORD_LIST ="select Case_file.Device_SN as _id, Case_file.Tester_ID,Call_actDateTime from Case_file";
     public static String signup_ADDTESTER = "insert into Tester(Tester_ID,Tester_Pass) values(?,?)";
 
     public static String insertLocationData = "insert into Location (BC_lat,BC_lon,GOG_lat,GOG_lon,Location_desc,Location_type) VALUES(?,?,?,?,?,?)";
+
+    public static String insertDeviceInfoData = "insert into Device (Device_SN, Device_desc, Device_Ver) values(?,?,?)";
+
+    public static String insertNewCaseFileData = "insert into Case_file(BC_lat,BC_lon,GOG_lat,GOG_lon,Location_desc,Location_type,Device_SN,Tester_ID,Call_actDateTime,Call_conDateTime,Activiation_type,Test_City) values(?,?,?,?,?,?,?,?,?,?,?,?)";
 }

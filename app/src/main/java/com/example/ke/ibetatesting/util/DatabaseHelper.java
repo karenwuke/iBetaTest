@@ -17,13 +17,16 @@ import android.database.SQLException;
 import android.widget.Spinner;
 
 import com.example.ke.ibetatesting.constant.SQLCommand;
+import com.example.ke.ibetatesting.view.addtestdata_location2Activity;
+
+import java.util.Date;
 
 /**
  * Created by ke on 11/22/17.
  */
 
 public class DatabaseHelper extends SQLiteOpenHelper{
-    static final String DATABASE_NAME="philiptest1.db";
+    static final String DATABASE_NAME="MIS571phi.db";
     private static final int DATABASE_VERSION =1;
     private static Context context;
     SQLiteDatabase db;
@@ -105,6 +108,19 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.execSQL(SQLCommand.signup_ADDTESTER,args);
 
     }
+    public void insertDeviceInfo(String devSN, String devDesc, String devVer){
+        String []args = {devSN,devDesc,devVer};
+        db = SQLiteDatabase.openDatabase(DATABASE_PATH,null,SQLiteDatabase.OPEN_READWRITE);
+        db.execSQL(SQLCommand.insertDeviceInfoData,args);
+    }
+    //public void updateDeviceInfoInFile(String de)
+
+    public void insertNewCaseFileData(String BC_lat,String BC_lon,String GOG_lat, String GOG_lon,String locDesc, String locType,String devSN, String testerID, String conDate, String curDate,String actType,String testCity){
+        String []args={BC_lat,BC_lon,GOG_lat,GOG_lon,locDesc,locType,devSN,testerID,conDate,curDate,actType,testCity};
+        db = SQLiteDatabase.openDatabase(DATABASE_PATH,null,SQLiteDatabase.OPEN_READWRITE);
+        db.execSQL(SQLCommand.insertNewCaseFileData,args);
+    }
+
     public void insertLocationData(String devlat, String devlon, String gglat, String gglon, String desc, String type){
         String []args = {devlat,devlon,gglat,gglon,desc,type};
         db = SQLiteDatabase.openDatabase(DATABASE_PATH,null,SQLiteDatabase.OPEN_READWRITE);
@@ -171,6 +187,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
      */
     public Cursor execQuery(String sql,String[] selectionArgs) throws SQLException
     {
+        db = SQLiteDatabase.openDatabase(DATABASE_PATH,null,SQLiteDatabase.OPEN_READWRITE);
         return db.rawQuery(sql, selectionArgs);
     }
     /**
@@ -181,6 +198,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
      */
     public Cursor execQuery(String sql) throws SQLException
     {
+        db = SQLiteDatabase.openDatabase(DATABASE_PATH,null,SQLiteDatabase.OPEN_READWRITE);
         return this.execQuery(sql, null);
+    }
+    public static DatabaseHelper getInstance()
+    {
+        if (instance==null) instance = new DatabaseHelper(context);
+        return instance;
     }
 }

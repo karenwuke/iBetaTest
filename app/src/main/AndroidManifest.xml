@@ -3,8 +3,7 @@
     package="com.example.ke.ibetatesting">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -26,14 +25,20 @@
         <activity android:name=".view.testerLoginActivity" />
         <activity
             android:name=".view.testerMainActivity"
-            android:label="                    MENU" />
+            android:label="                  TESTER    MENU" />
         <activity
             android:name=".view.managerMainActivity"
-            android:label="                    MENU" />
+            android:label="                  MANAGER   MENU" />
         <activity android:name=".view.signupActivity" />
         <activity android:name=".view.analyzeActivity" />
-        <activity android:name=".view.addtestdataActivity" />
-        <activity android:name=".view.datamanage"></activity>
+        <activity android:name=".view.addtestdata_location2Activity" />
+        <activity android:name=".view.datamanage" />
+
+        <activity android:name=".view.LocationDataAnalyze" />
+        <activity android:name=".view.locationAccuracyActivity" />
+        <activity android:name=".view.addDevInfo"></activity>
+        <activity android:name=".view.ShowListActivity"></activity>
+
     </application>
 
 </manifest>
