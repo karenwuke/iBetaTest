@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ke.ibetatesting.view.addtestdata_location2Activity">
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:id="@+id/testerID"
+        android:hint="Please input your ID"/>
+
+    <EditText
+        android:id="@+id/device_SN"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/testerID"
+        android:hint="Please input your the device SN" />
+
+
+
+    <Spinner
+        android:id="@+id/locType_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/device_SN"
+        android:autofillHints="Please select a location type"
+        android:entries="@array/locationEntriesArray">
+
+    </Spinner>
+
+
+
+    <EditText
+        android:id="@+id/device_lon"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/locType_spinner"
+        android:layout_marginTop="16dp"
+        android:hint="Please input longitude of device" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Please input latitude of device"
+        android:id="@+id/device_lat"
+        android:layout_below="@+id/device_lon"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/loc_desc"
+        android:layout_below="@+id/device_lat"
+        android:hint="Describe the location"/>
+
+    <EditText
+        android:id="@+id/connectedDate_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loc_desc"
+        android:hint="When call connected  yyyy-MM-dd HH:mm:ss" />
+
+    <EditText
+        android:id="@+id/actTime_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/connectedDate_edt"
+        android:hint="When activated device yyyy-MM-dd HH:mm:ss" />
+
+    <EditText
+        android:id="@+id/pickActType_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/actTime_edt"
+        android:layout_marginTop="12dp"
+        android:hint="Please input activated type D/P" />
+
+    <EditText
+        android:id="@+id/testcity_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pickActType_edt"
+        android:hint="Which city the device is tested" />
+
+    <Button
+        android:id="@+id/confirmdata_btn"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/testcity_edt"
+        android:layout_marginTop="19dp"
+        android:text="Confirm" />
+
+
+
+</RelativeLayout>

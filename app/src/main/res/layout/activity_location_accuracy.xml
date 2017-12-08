@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ke.ibetatesting.view.locationAccuracyActivity">
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@drawable/loccy1"
+        android:id="@+id/loccy1"/>
+
+    <ImageView
+        android:id="@+id/loccy2"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loccy1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/loccy2" />
+
+    <EditText
+        android:id="@+id/devSNana_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loccy2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:hint="Please input the device SN" />
+
+    <ImageView
+        android:id="@+id/loccy3"
+        android:layout_width="158dp"
+        android:layout_height="39dp"
+        android:layout_alignLeft="@+id/loccy2"
+        android:layout_alignStart="@+id/loccy2"
+        android:layout_below="@+id/devSNana_edt"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/loccy3" />
+
+    <EditText
+        android:id="@+id/locTypeAna_edt"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loccy3"
+        android:layout_marginTop="19dp"
+        android:hint="Please input location type" />
+
+    <ImageButton
+        android:id="@+id/showLocAna_btn"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/locTypeAna_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/loccy4" />
+</RelativeLayout>

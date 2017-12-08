@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ke.ibetatesting.view.addtestdata_call3Activity">
+    <!--<ImageView-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/connectedtime"-->
+        <!--android:id="@+id/conTimePic"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/connectedDate_edt"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/conTimePic"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:hint="Please input the date when call connected" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/connectedTime_edt"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/connectedDate_edt"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:hint="Please input the time when call connected" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/getTime_btn"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@+id/connectedTime_edt"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:text="Click and Get Current Time" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/actTypePic"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/getTime_btn"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@drawable/activitedtype" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/pickActType_edt"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/actTypePic"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:hint="Activated Type" />-->
+    <!--<Button-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/addAllFileData_btn"-->
+        <!--android:layout_below="@+id/pickActType_edt"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:text="Confirm and finish test data input"/>-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ke.ibetatesting.view.addtestdata_device1Activity">
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sn"
+        android:id="@+id/pleasedeviceSn"
+        />
+
+    <EditText
+        android:id="@+id/dev_SN_edt"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pleasedeviceSn"
+        android:layout_marginTop="20dp"
+        android:hint="Device SN"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/devdesc"-->
+        <!--android:layout_width="360dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/dev_SN_edt"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:background="@drawable/devdesc" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/dev_desc_edt"-->
+        <!--android:layout_width="360dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:hint="Device description" />-->
+
+    <Button
+        android:id="@+id/device_data_btn"
+        android:layout_width="250dp"
+
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/dev_SN_edt"
+        android:layout_alignRight="@+id/dev_SN_edt"
+        android:layout_below="@+id/dev_SN_edt"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:text="next page" />
+
+</RelativeLayout>

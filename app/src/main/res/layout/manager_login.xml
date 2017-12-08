@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bitmap" />
+
+    <EditText
+        android:hint="Username"
+        android:paddingLeft="60dp"
+        android:id="@+id/managerName"
+        android:layout_width="260dp"
+        android:layout_height="75dp"
+        android:background="@drawable/username"
+        android:layout_below="@id/header"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:hint="Password"
+        android:paddingLeft="60dp"
+        android:id="@+id/managerpwd"
+        android:layout_width="260dp"
+        android:layout_height="75dp"
+        android:background="@drawable/pwd"
+        android:layout_below="@id/managerName"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/managerlogin_btn"
+        android:layout_width="260dp"
+        android:layout_height="75dp"
+        android:background="@drawable/login"
+        android:layout_below="@+id/managerpwd"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
